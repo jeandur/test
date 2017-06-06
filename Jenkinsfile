@@ -1,18 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('error') {
       steps {
-        parallel(
-          "1": {
-            sleep 5
-            
-          },
-          "2": {
-            echo 'hello world'
-            
-          }
-        )
+        echo 'hello world'
       }
     }
   }
